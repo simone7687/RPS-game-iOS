@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		FCE29F622513D9B900DE20F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE29F612513D9B900DE20F4 /* AppDelegate.swift */; };
 		FCE29F642513D9B900DE20F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE29F632513D9B900DE20F4 /* SceneDelegate.swift */; };
-		FCE29F662513D9B900DE20F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE29F652513D9B900DE20F4 /* ContentView.swift */; };
+		FCE29F662513D9B900DE20F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE29F652513D9B900DE20F4 /* ViewController.swift */; };
 		FCE29F682513D9BA00DE20F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE29F672513D9BA00DE20F4 /* Assets.xcassets */; };
-		FCE29F6B2513D9BA00DE20F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE29F6A2513D9BA00DE20F4 /* Preview Assets.xcassets */; };
+		FCE29F6B2513D9BA00DE20F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE29F6A2513D9BA00DE20F4 /* Main.storyboard */; };
 		FCE29F6E2513D9BA00DE20F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE29F6C2513D9BA00DE20F4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +19,12 @@
 		FCE29F5E2513D9B900DE20F4 /* rps-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rps-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE29F612513D9B900DE20F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE29F632513D9B900DE20F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCE29F652513D9B900DE20F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCE29F652513D9B900DE20F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCE29F672513D9BA00DE20F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FCE29F6A2513D9BA00DE20F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCE29F6D2513D9BA00DE20F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCE29F692513D9BA00DE20F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCE29F6F2513D9BA00DE20F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE29F6892513D9BA00DE20F4 /* rps-game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "rps-game.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,23 +57,16 @@
 		FCE29F602513D9B900DE20F4 /* rps-game */ = {
 			isa = PBXGroup;
 			children = (
+				FCE29F6892513D9BA00DE20F4 /* rps-game.entitlements */,
 				FCE29F612513D9B900DE20F4 /* AppDelegate.swift */,
 				FCE29F632513D9B900DE20F4 /* SceneDelegate.swift */,
-				FCE29F652513D9B900DE20F4 /* ContentView.swift */,
+				FCE29F652513D9B900DE20F4 /* ViewController.swift */,
 				FCE29F672513D9BA00DE20F4 /* Assets.xcassets */,
 				FCE29F6C2513D9BA00DE20F4 /* LaunchScreen.storyboard */,
 				FCE29F6F2513D9BA00DE20F4 /* Info.plist */,
-				FCE29F692513D9BA00DE20F4 /* Preview Content */,
+				FCE29F6A2513D9BA00DE20F4 /* Main.storyboard */,
 			);
 			path = "rps-game";
-			sourceTree = "<group>";
-		};
-		FCE29F692513D9BA00DE20F4 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FCE29F6A2513D9BA00DE20F4 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE29F6E2513D9BA00DE20F4 /* LaunchScreen.storyboard in Resources */,
-				FCE29F6B2513D9BA00DE20F4 /* Preview Assets.xcassets in Resources */,
+				FCE29F6B2513D9BA00DE20F4 /* Main.storyboard in Resources */,
 				FCE29F682513D9BA00DE20F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,7 +142,7 @@
 			files = (
 				FCE29F622513D9B900DE20F4 /* AppDelegate.swift in Sources */,
 				FCE29F642513D9B900DE20F4 /* SceneDelegate.swift in Sources */,
-				FCE29F662513D9B900DE20F4 /* ContentView.swift in Sources */,
+				FCE29F662513D9B900DE20F4 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +155,14 @@
 				FCE29F6D2513D9BA00DE20F4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FCE29F6A2513D9BA00DE20F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCE29F692513D9BA00DE20F4 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,10 +286,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "rps-game/rps-game.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"rps-game/Preview Content\"";
 				DEVELOPMENT_TEAM = 7MDYH39NQU;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "rps-game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,6 +296,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "upo.massaro.rps-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,10 +306,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "rps-game/rps-game.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"rps-game/Preview Content\"";
 				DEVELOPMENT_TEAM = 7MDYH39NQU;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "rps-game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "upo.massaro.rps-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
