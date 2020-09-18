@@ -97,16 +97,25 @@
                                 <rect key="frame" x="148" y="748" width="48" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <state key="normal" title="✌️"/>
+                                <connections>
+                                    <action selector="clickScissors:" destination="64g-Xo-xa8" eventType="touchUpInside" id="cIK-C9-yQ8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PA-jG-wve">
                                 <rect key="frame" x="216" y="748" width="48" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <state key="normal" title="✊"/>
+                                <connections>
+                                    <action selector="clickRock:" destination="64g-Xo-xa8" eventType="touchUpInside" id="fv4-fS-9o0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLA-DQ-Cop">
                                 <rect key="frame" x="80" y="748" width="48" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <state key="normal" title="🖐️"/>
+                                <connections>
+                                    <action selector="clickPaper:" destination="64g-Xo-xa8" eventType="touchUpInside" id="mQz-bO-vjv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opponent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJC-CH-FkI">
                                 <rect key="frame" x="0.0" y="127.5" width="414" height="20.5"/>
@@ -137,6 +146,11 @@
                         <viewLayoutGuide key="safeArea" id="eKV-zt-C7c"/>
                     </view>
                     <navigationItem key="navigationItem" id="2lv-77-tnn"/>
+                    <connections>
+                        <outlet property="myChoiceLabel" destination="LhL-J1-fUR" id="ZrR-9v-izg"/>
+                        <outlet property="opponentChoiceLabel" destination="zam-Hg-Zcb" id="eku-Rv-T6X"/>
+                        <outlet property="resultLabel" destination="70Q-yV-Vzg" id="CBx-6W-uTZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fNW-c9-Gu8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
