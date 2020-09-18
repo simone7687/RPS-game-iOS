@@ -59,12 +59,12 @@
         <!--View Controller-->
         <scene sceneID="hlR-zs-Ztt">
             <objects>
-                <viewController id="64g-Xo-xa8" sceneMemberID="viewController">
+                <viewController id="64g-Xo-xa8" customClass="RPSViewController" customModule="rps_game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7v8-lz-AIf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cO-XI-xwI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make your choice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cO-XI-xwI">
                                 <rect key="frame" x="0.0" y="717.5" width="414" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -73,7 +73,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="X9M-FZ-R6l">
                                 <rect key="frame" x="0.0" y="158" width="414" height="472"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🧟 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zam-Hg-Zcb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🧟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zam-Hg-Zcb">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="76"/>
                                         <nil key="textColor"/>
@@ -108,16 +108,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <state key="normal" title="🖐️"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opponent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJC-CH-FkI">
+                                <rect key="frame" x="0.0" y="127.5" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wLA-DQ-Cop" firstAttribute="leading" secondItem="eKV-zt-C7c" secondAttribute="leading" constant="110" id="0Bo-Io-rIx"/>
+                            <constraint firstItem="X9M-FZ-R6l" firstAttribute="top" secondItem="wJC-CH-FkI" secondAttribute="bottom" constant="10" id="0oH-uG-5TD"/>
                             <constraint firstItem="3WJ-ne-hB3" firstAttribute="leading" secondItem="wLA-DQ-Cop" secondAttribute="trailing" constant="20" id="5SM-t8-QCS"/>
                             <constraint firstItem="wLA-DQ-Cop" firstAttribute="top" secondItem="3cO-XI-xwI" secondAttribute="bottom" constant="10" id="JoT-ow-Mbb"/>
                             <constraint firstItem="eKV-zt-C7c" firstAttribute="trailing" secondItem="0PA-jG-wve" secondAttribute="trailing" constant="110" id="Rnq-6F-ScG"/>
                             <constraint firstItem="X9M-FZ-R6l" firstAttribute="leading" secondItem="eKV-zt-C7c" secondAttribute="leading" id="X9K-bW-V8S"/>
                             <constraint firstItem="eKV-zt-C7c" firstAttribute="bottom" secondItem="wLA-DQ-Cop" secondAttribute="bottom" constant="50" id="Xy3-lS-tmh"/>
                             <constraint firstItem="3cO-XI-xwI" firstAttribute="leading" secondItem="eKV-zt-C7c" secondAttribute="leading" id="YPy-2n-MFo"/>
+                            <constraint firstItem="eKV-zt-C7c" firstAttribute="trailing" secondItem="wJC-CH-FkI" secondAttribute="trailing" id="a0e-2w-0cM"/>
+                            <constraint firstItem="wJC-CH-FkI" firstAttribute="leading" secondItem="eKV-zt-C7c" secondAttribute="leading" id="eUE-1t-53v"/>
                             <constraint firstItem="eKV-zt-C7c" firstAttribute="bottom" secondItem="3WJ-ne-hB3" secondAttribute="bottom" constant="50" id="p37-lz-1qk"/>
                             <constraint firstItem="0PA-jG-wve" firstAttribute="leading" secondItem="3WJ-ne-hB3" secondAttribute="trailing" constant="20" id="sls-aC-p77"/>
                             <constraint firstItem="X9M-FZ-R6l" firstAttribute="top" secondItem="eKV-zt-C7c" secondAttribute="top" constant="70" id="tgk-KL-UfP"/>
